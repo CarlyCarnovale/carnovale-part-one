@@ -1,0 +1,81 @@
+body {
+    /* display: flex; 
+    flex-direction: column; */
+    background-color: #F0ECEE;
+    font-family: 'Fira Sans', sans-serif;
+    padding: 10px 25px;
+}
+.navigation ul {
+    list-style: none;  
+    padding: 0;
+}
+.heading_main {
+}
+.button {
+    background-color: #FF4850;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    width: 100%;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.button:hover {
+    color: #FF4850;
+    background-color: #CCC;
+}
+.navigation a {
+    color: #88898B;
+    text-decoration: none;
+}
+.emphasis {
+    color: #FF4850;
+}
+.p_main {
+    color: #88898B;  
+}
+.main {
+    /* background-image: url('images/bulldog.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 500px; */
+}
+
+@media (min-width: 768px) {
+    body {
+        background-image: url('../images/bulldog.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;    
+        padding: 25px 50px;
+    }
+    .header {
+        display: flex;
+        flex-direction: row; 
+    }
+
+    .logo {
+        flex-basis: 25%;
+    }
+    .navigation {
+        flex-basis: 75%;
+        text-align: right;
+    }
+    .navigation ul li {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    .main {
+        width:460px;
+    }
+
+    .button {
+        width: auto;
+        margin: 0;
+    }
+    
+    .navigation ul {
+        margin: 0;
+    }
+}
